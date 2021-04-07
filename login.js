@@ -28,7 +28,7 @@ const toggleForm = () => {
     promise
     .then(() =>{
 
-      document.location.href="index.html";
+      document.location.href="landing.html";
   
     })
 }
@@ -41,7 +41,7 @@ function signIn(){
   promise
   .then(() =>{
 
-    document.location.href="index.html";
+    document.location.href="landing.html";
 
   })
   .catch( (err) =>{
