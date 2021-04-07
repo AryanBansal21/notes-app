@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 25px;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding-top: 3rem;
+   
+  
+    
+}
+
+body.dark {
+  background-color: #292c45;
+}
+
+.label {
+  width: 50px;
+  height: 26px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #111;
+  display: flex;
+  padding: 5px;
+  border-radius: 50px;
+  position: relative;
+  transform: scale(1.5);
+}
+
+.ball {
+  position: fixed;
+  width: 22px;
+  height: 22px;
+  background-color: white;
+  top: 5px;
+  left: 5px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.fa-moon {
+  color: #f1c40f;
+}
+
+.fa-sun {
+  color: #f39c12;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(30px);
+}
+
+
+
+  .sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #9ec862;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: gray;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #eee;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    background-color: #9ec862;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+   
+  
+  }
+  
+  .openbtn:hover {
+    background-color: gray;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 0.5rem 1rem;
+    position: fixed;
+    top: 0.2rem;
+    
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+  
+ .viewmodes {
+  padding: 8px 8px 8px 32px;
+  }
+  
+.add {
+    background-color: #9ec862;
+    border-radius: 3px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+}
+
+.add:hover{
+  background-color: gray;
+}
+.note {
+    background-color: #fff;
+    box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    height: 400px;
+    width: 400px;
+}
+
+.note .tools {
+    background-color: #9ec862;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5rem;
+}
+
+.note .tools button {
+    background-color: transparent;
+    border: none;
+    color: azure;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+}
+
+.note .main {
+    background-color: #eee;
+    overflow: hidden;
+    height: 400px;
+    width: 100%;
+}
+
+.note textarea {
+    outline: none;
+    font-family: inherit;
+    font-size: 1.2rem;
+    border: none;
+    height: 400px;
+    width: 100%;
+}
+
+.note .hidden {
+    display: none;
+}
+
+
+ img{
+  height: 21%;
+  width: 9.2%;
+  float: right;
+  padding: 0.5rem 0rem;
+  margin: 28px -12px;
+  top: 2rem;
+  right:1rem;
+  position: fixed;
+  
+}
+.greet{
+  padding-top: 1px;
+  padding-left: 355px;
+  padding-right: -34px;
+  margin: -47px 191px;
+  float: left;
+  width: 101%;
+  border: 4px solid #9ec862;
+  color:#9ec862;
+  font-size: 20px;
+ 
+}
